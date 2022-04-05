@@ -19,16 +19,12 @@ namespace Sistema_Lanchonete
             int i = 0;
             string Sair = "";
 
-
-
             Console.WriteLine("-----------------------------------\nCARDÁPIO\n-----------------------------------");
-
-            
+                       
 
 
             do
-            {
-
+            { // Exibição do Cardápio
                 for (i = 0; i < Codigo.Length; i++)
                 {
                     Console.WriteLine("{0} {1} R$ {2}", Codigo[i], Produtos[i], Preco[i].ToString("F2", CultureInfo.InvariantCulture));
@@ -49,12 +45,11 @@ namespace Sistema_Lanchonete
                 Console.Clear();
 
             } while (Sair != "S" && Sair != "s");
+
+            //Exibição Finalização do pedido
             Console.WriteLine("-----------------------------------\nPEDIDO CONCLUÍDO\n-----------------------------------");
             Console.WriteLine("Você escolheu {0} unidade(s) de {1} Total R$ {2}",Quantidade,Produtos[i],Total.ToString("F2",CultureInfo.InvariantCulture));
-
-
-
-            
+                               
             
 
 
